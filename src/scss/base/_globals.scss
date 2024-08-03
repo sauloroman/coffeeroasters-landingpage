@@ -16,6 +16,11 @@ a {
   display: inline-block;
 }
 
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
 button {
   background-color: none;
   border: none;

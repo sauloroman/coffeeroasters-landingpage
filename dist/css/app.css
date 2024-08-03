@@ -17,10 +17,21 @@ a {
   display: inline-block;
 }
 
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
 button {
   background-color: none;
   border: none;
   cursor: pointer;
+}
+
+.container {
+  width: 120rem;
+  max-width: 95%;
+  margin-inline: auto;
 }
 
 html {
@@ -30,13 +41,17 @@ html {
 body {
   font-family: "Barlow", sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  line-height: 1.7;
   color: #333D4B;
+}
+
+button {
+  font-family: "Fraunces", serif;
 }
 
 h1, h2, h3, h4 {
   font-family: "Fraunces", serif;
-  font-weight: bolder;
+  font-weight: 900;
   color: #333D4B;
 }
 
@@ -46,6 +61,7 @@ h1, h2, h3, h4 {
 
 .heading-2 {
   font-size: 4rem;
+  line-height: 1;
 }
 
 .heading-3 {
@@ -66,4 +82,85 @@ h1, h2, h3, h4 {
   font-family: "Barlow", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.header {
+  height: 7rem;
+  padding: 1rem 0;
+}
+.header__title {
+  margin-left: 1rem;
+}
+.header__logo {
+  width: 100%;
+}
+.header__menu {
+  cursor: pointer;
+}
+
+.hero {
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.hero--home {
+  height: 50rem;
+  background-image: url("/dist/img/hero_home.png");
+}
+.hero__overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero__grid {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__content {
+  gap: 3rem;
+}
+.hero__title {
+  color: #FEFCF7;
+  text-align: center;
+}
+.hero__text {
+  font-weight: 200;
+  color: #FEFCF7;
+  text-align: center;
+}
+.hero__button {
+  padding: 2rem 3.2rem;
+  background-color: #0E8784;
+  color: #FEFCF7;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex__between {
+  justify-content: space-between;
+}
+.flex__column {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
 }

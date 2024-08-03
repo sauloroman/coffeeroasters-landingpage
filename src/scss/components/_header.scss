@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.header {
+  height: 7rem;
+  padding: 1rem 0;
+
+  &__title {
+    margin-left: 1rem;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__menu {
+    cursor: pointer;
+  }
+}

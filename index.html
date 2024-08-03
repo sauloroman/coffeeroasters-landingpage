@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoffeeRoasters &mdash; Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeRoasters &mdash; Home</title>
 
-  <link rel="stylesheet" href="./dist/css/app.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./dist/css/app.css" />
+  </head>
+  <body class="container">
+    <header class="header flex flex__between">
+      <div class="flex">
+        <picture>
+          <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
+          <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
+          <img
+            class="header__logo"
+            alt="Coffee grains"
+            loading="lazy"
+            src="./dist/img/logo-cafe.png"
+            type="image/png"
+          />
+        </picture>
+        <h3 class="header__title">coffeeroasters</h3>
+      </div>
+      <picture>
+        <source srcset="./dist/img/menu-ham.avif" type="image/avif" />
+        <source srcset="./dist/img/menu-ham.webp" type="image/webp" />
+        <img
+          class="header__menu"
+          alt="Hamburger menu icon"
+          loading="lazy"
+          src="./dist/img/menu-ham.png"
+          type="image/png"
+        />
+      </picture>
+    </header>
 
-  <header class="header">
-    <div class="header__logo">
-      
-      <h3>coffeeroasters</h3>
-    </div>
-  </header>
+    <section class="hero hero--home">
+      <div class="hero__overlay"></div>
+      <div class="hero__grid">
+        <div class="hero__content flex flex__column">
+          <h1 class="heading-2 hero__title">Great coffee made simple.</h1>
+          <p class="hero__text">Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+            coffees from our best roasters delivered directly to your door, at your schedule.</p>
+          <button class="hero__button">Create your plan</button>
+        </div>
+      </div>
+    </section>
 
-</body>
+  </body>
 </html>
