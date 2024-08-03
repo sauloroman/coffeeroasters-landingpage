@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: v.$font-family-text;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: v.$color-black;
+}
+
+h1, h2, h3, h4 {
+  font-family: v.$font-family-heading;
+  font-weight: bolder;
+  color: v.$color-black;
+}
+
+.heading-1 {
+  font-size: 7.2rem;
+}
+
+.heading-2 {
+  font-size: 4rem;
+}
+
+.heading-3 {
+  font-size: 3.2rem;
+}
+
+.heading-4 {
+  font-size: 2.4rem;
+}
+
+.heading-alternate {
+  color: v.$color-gray;
+  font-size: 15rem;
+  text-transform: lowercase;
+}
+
+.text-navigation {
+  font-family: v.$font-family-text;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+

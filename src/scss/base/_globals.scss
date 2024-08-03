@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+
