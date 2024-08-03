@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.hero {
+  
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  
+  &--home {
+    height: 50rem;
+    background-image: url('/dist/img/hero_home.png');
+  }
+  
+  &__overlay {
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  &__grid {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__content {
+    gap: 3rem;
+  }
+  
+  &__title {
+    color: v.$color-light;
+    text-align: center;
+  }
+  
+  &__text {
+    font-weight: 200;
+    color: v.$color-light;
+    text-align: center;
+  }
+
+  &__button {
+    @include m.button( 
+      v.$color-blue, 
+      v.$color-hover, 
+      v.$color-light, 
+      80% 
+    )
+  }
+
+}

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 120rem;
+  max-width: 95%;
+  margin-inline: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #333D4B;
+}
+
+button {
+  font-family: "Fraunces", serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #333D4B;
+}
+
+.heading-1 {
+  font-size: 7.2rem;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.heading-3 {
+  font-size: 3.2rem;
+}
+
+.heading-4 {
+  font-size: 2.4rem;
+}
+
+.heading-alternate {
+  color: #83888F;
+  font-size: 15rem;
+  text-transform: lowercase;
+}
+
+.text-navigation {
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.header {
+  height: 7rem;
+  padding: 1rem 0;
+  background-color: #FEFCF7;
+}
+.header__title {
+  margin-left: 1rem;
+}
+.header__logo {
+  width: 100%;
+}
+.header__icon {
+  cursor: pointer;
+}
+.header__icon--menu {
+  display: block;
+}
+.header__icon--close {
+  width: 1.8rem;
+  display: block;
+}
+
+.navigation {
+  position: fixed;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, #FEFCF7 0%, #FEFCF7 50%, rgba(0, 0, 0, 0.5) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+.navigation--open {
+  z-index: 99;
+  opacity: 1;
+}
+.navigation__header {
+  padding: 2rem;
+}
+.navigation__list {
+  padding: 5rem 0;
+  gap: 2.4rem;
+}
+.navigation__link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #333D4B;
+  font-size: 2.4rem;
+}
+
+.hero {
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.hero--home {
+  height: 50rem;
+  background-image: url("/dist/img/hero_home.png");
+}
+.hero__overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero__grid {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__content {
+  gap: 3rem;
+}
+.hero__title {
+  color: #FEFCF7;
+  text-align: center;
+}
+.hero__text {
+  font-weight: 200;
+  color: #FEFCF7;
+  text-align: center;
+}
+.hero__button {
+  background-color: #0E8784;
+  border-radius: 8px;
+  color: #FEFCF7;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 3.2rem;
+  transition: all 0.4s ease-out;
+  width: 80%;
+  text-align: center;
+  font-family: "Fraunces", serif;
+}
+.hero__button:hover {
+  background-color: #66D2CF;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex__end {
+  justify-content: flex-end;
+}
+.flex__between {
+  justify-content: space-between;
+}
+.flex__column {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.products__title {
+  font-size: 4rem;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #83888F 0%, white 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+.products__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+.product {
+  text-align: center;
+}
+.product__title {
+  margin-bottom: 1rem;
+}
+.product__text {
+  width: 85%;
+  margin-inline: auto;
+}
+
+.section-space {
+  padding: 8rem 0;
+}
