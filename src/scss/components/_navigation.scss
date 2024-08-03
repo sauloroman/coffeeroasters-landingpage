@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.navigation {
+
+  position: fixed;
+  z-index: 99;
+  background-image: linear-gradient( 
+    to bottom, 
+    v.$color-light 0%,
+    v.$color-light 50%,
+    rgba(0, 0, 0, .5) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: all .4s ease-out;
+  opacity: 0;
+
+  &--open {
+    opacity: 1;
+  }
+
+  &__header {
+    padding: 2rem;
+  }
+
+  &__list {
+    padding: 5rem 0;
+    gap: 2.4rem
+  }
+
+  &__link {
+    font-family: v.$font-family-heading;
+    font-weight: 900;
+    color: v.$color-black;
+    font-size: 2.4rem;
+  }
+
+}

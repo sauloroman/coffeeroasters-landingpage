@@ -14,11 +14,10 @@
           <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
           <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
           <img
-            class="header__logo"
-            alt="Coffee grains"
-            loading="lazy"
-            src="./dist/img/logo-cafe.png"
-            type="image/png"
+          class="header__logo"
+          alt="Coffee grains"
+          src="./dist/img/logo-cafe.png"
+          type="image/png"
           />
         </picture>
         <h3 class="header__title">coffeeroasters</h3>
@@ -27,13 +26,36 @@
         <source srcset="./dist/img/menu-ham.avif" type="image/avif" />
         <source srcset="./dist/img/menu-ham.webp" type="image/webp" />
         <img
-          class="header__menu"
-          alt="Hamburger menu icon"
-          loading="lazy"
-          src="./dist/img/menu-ham.png"
-          type="image/png"
+        class="header__icon header__icon--menu"
+        alt="Hamburger menu icon"
+        src="./dist/img/menu-ham.png"
+        type="image/png"
         />
       </picture>
+      
+      <nav class="navigation">
+        <header class="flex flex__end navigation__header">
+          <img
+          class="header__icon header__icon--close"
+          alt="Hamburger menu icon"
+          src="./dist/img/close-menu.svg"
+          type="image/svg"
+          />
+        </header>
+        <ul class="navigation__list flex flex__column">
+          <li class="navigation__item">
+            <a class="navigation__link" href="/">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/about.html">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/create-plan.html"
+            >Create Your Plan</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero hero--home">
@@ -41,12 +63,16 @@
       <div class="hero__grid">
         <div class="hero__content flex flex__column">
           <h1 class="heading-2 hero__title">Great coffee made simple.</h1>
-          <p class="hero__text">Start your mornings with the world’s best coffees. Try our expertly curated artisan 
-            coffees from our best roasters delivered directly to your door, at your schedule.</p>
+          <p class="hero__text">
+            Start your mornings with the world’s best coffees. Try our expertly
+            curated artisan coffees from our best roasters delivered directly to
+            your door, at your schedule.
+          </p>
           <button class="hero__button">Create your plan</button>
         </div>
       </div>
     </section>
-
+    
+    <script src="./src/assets/js/app.js"></script>
   </body>
 </html>

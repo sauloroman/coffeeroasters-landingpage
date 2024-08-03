@@ -87,6 +87,7 @@ h1, h2, h3, h4 {
 .header {
   height: 7rem;
   padding: 1rem 0;
+  background-color: #FEFCF7;
 }
 .header__title {
   margin-left: 1rem;
@@ -94,8 +95,43 @@ h1, h2, h3, h4 {
 .header__logo {
   width: 100%;
 }
-.header__menu {
+.header__icon {
   cursor: pointer;
+}
+.header__icon--menu {
+  display: block;
+}
+.header__icon--close {
+  width: 1.8rem;
+  display: block;
+}
+
+.navigation {
+  position: fixed;
+  z-index: 99;
+  background-image: linear-gradient(to bottom, #FEFCF7 0%, #FEFCF7 50%, rgba(0, 0, 0, 0.5) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+.navigation--open {
+  opacity: 1;
+}
+.navigation__header {
+  padding: 2rem;
+}
+.navigation__list {
+  padding: 5rem 0;
+  gap: 2.4rem;
+}
+.navigation__link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #333D4B;
+  font-size: 2.4rem;
 }
 
 .hero {
@@ -152,6 +188,9 @@ h1, h2, h3, h4 {
 .flex {
   display: flex;
   align-items: center;
+}
+.flex__end {
+  justify-content: flex-end;
 }
 .flex__between {
   justify-content: space-between;

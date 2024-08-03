@@ -4,6 +4,7 @@
 .header {
   height: 7rem;
   padding: 1rem 0;
+  background-color: v.$color-light;
 
   &__title {
     margin-left: 1rem;
@@ -13,7 +14,16 @@
     width: 100%;
   }
 
-  &__menu {
+  &__icon {
     cursor: pointer;
+
+    &--menu {
+      display: block;
+    }
+
+    &--close {
+      width: 1.8rem;
+      display: block;
+    }
   }
 }

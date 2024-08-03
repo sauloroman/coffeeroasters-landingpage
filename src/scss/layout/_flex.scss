@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
 
+  &__end {
+    justify-content: flex-end;
+  }
+
   &__between {
     justify-content: space-between;
   }
@@ -11,5 +15,6 @@
     justify-content: center;
     flex-direction: column;
   }
+
 
 }
