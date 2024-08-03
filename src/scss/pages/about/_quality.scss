@@ -2,5 +2,42 @@
 @use '../../abstracts/mixins' as m;
 
 .quality {
+  margin-top: 20rem;
+  background-color: v.$color-black;
+  border-radius: 1.5rem;
+  padding: 0 2rem 8rem;
+
+  &__imageBox {
+    width: 95%;
+    margin: 0 auto;
+  }
   
+  &__image {
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-top: -5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    color: v.$color-light;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  &__container {
+    @include m.grid( 1, 1fr, 2.4rem );
+  }
+
+  &__content {
+    color: v.$color-light;
+  }
+
+  &__text {
+    text-align: center;
+    font-weight: 200;
+  }
 }
