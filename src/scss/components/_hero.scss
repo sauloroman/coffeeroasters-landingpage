@@ -51,7 +51,12 @@
   }
 
   &__button {
-    @include m.button( v.$color-blue, v.$color-light )
+    @include m.button( 
+      v.$color-blue, 
+      v.$color-hover, 
+      v.$color-light, 
+      80% 
+    )
   }
 
 }

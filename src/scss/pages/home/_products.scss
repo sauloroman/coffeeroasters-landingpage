@@ -1,0 +1,36 @@
+@use '../../abstracts/variables' as v;
+@use '../../abstracts/mixins' as m;
+
+.products {
+
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+    background-image: linear-gradient(
+      to bottom, 
+      v.$color-gray 0%, 
+      lighten( v.$color-gray, 50% ) 100%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    @include m.grid(1, 1fr, 4rem);
+  }
+
+}
+
+.product {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    width: 85%;
+    margin-inline: auto;
+  }
+}
