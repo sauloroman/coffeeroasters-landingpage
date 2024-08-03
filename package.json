@@ -1,0 +1,25 @@
+{
+  "name": "coffeeroasters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.4",
+    "gulp": "^5.0.0",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^5.0.0",
+    "postcss": "^8.4.40",
+    "sass": "^1.77.8"
+  }
+}
