@@ -140,8 +140,9 @@ h1, h2, h3, h4 {
   background-position: 70%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 1.5rem;
   overflow: hidden;
+  margin-bottom: 10rem;
   position: relative;
 }
 .hero--home {
@@ -209,6 +210,53 @@ h1, h2, h3, h4 {
   flex-direction: column;
 }
 
+.features {
+  padding: 6rem 2rem;
+  background-color: #333D4B;
+  border-radius: 1.5rem;
+  height: 100rem;
+}
+.features__title {
+  color: #FEFCF7;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.features__text {
+  color: #FEFCF7;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 8rem;
+}
+.features__grid {
+  width: 100%;
+  padding-bottom: 10rem;
+}
+
+.feature {
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 8rem 1rem 6rem;
+  background-color: #0E8784;
+  margin-bottom: 2.4rem;
+}
+.feature:last-of-type {
+  margin-bottom: 0;
+}
+.feature__icon {
+  margin-bottom: 4rem;
+}
+.feature__title {
+  color: #FEFCF7;
+  margin-bottom: 1rem;
+}
+.feature__text {
+  color: #FEFCF7;
+  width: 75%;
+  margin: 0 auto;
+  font-weight: 200;
+}
+
 .products__title {
   font-size: 4rem;
   text-align: center;
@@ -236,5 +284,5 @@ h1, h2, h3, h4 {
 }
 
 .section-space {
-  padding: 8rem 0;
+  margin-bottom: 10rem;
 }
