@@ -1,0 +1,35 @@
+@use '../../abstracts/variables' as v;
+@use '../../abstracts/mixins' as m;
+
+.directions {
+
+  padding-top: 75rem;
+  text-align: center;
+
+  &__title {
+    color: v.$color-gray;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    @include m.button( v.$color-blue, v.$color-hover, v.$color-light, 80%);
+  }
+
+}
+
+.direction {
+
+  margin-bottom: 5rem;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__number {
+    font-family: v.$font-family-heading;
+    font-size: 7.2rem;
+    font-weight: 900;
+    color: v.$color-cream;
+  }
+
+}
