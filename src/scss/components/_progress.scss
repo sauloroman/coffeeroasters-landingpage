@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.progress {
+  
+  
+  &__blue {
+    @include m.progress( v.$color-blue, v.$color-cream );
+    display: none;
+  }
+  
+  &__light {
+    @include m.progress( v.$color-cream, v.$color-blue );
+    display: none;
+  }
+
+}

@@ -15,6 +15,7 @@
   }
 
   &__icon {
+    font-size: 3rem;
     cursor: pointer;
 
     &--menu {
@@ -22,7 +23,6 @@
     }
 
     &--close {
-      width: 1.8rem;
       display: block;
     }
   }

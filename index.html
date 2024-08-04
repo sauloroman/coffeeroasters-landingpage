@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoffeeRoasters &mdash; Home</title>
+    <link rel="icon" href="./dist/img/cafe-icon.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="./dist/css/app.css" />
   </head>
@@ -14,33 +17,19 @@
           <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
           <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
           <img
-          class="header__logo"
+          class="logo"
           alt="Coffee grains"
           src="./dist/img/logo-cafe.png"
           type="image/png"
           />
         </picture>
-        <h3 class="header__title">coffeeroasters</h3>
+        <h3 class="logo__title">coffeeroasters</h3>
       </div>
-      <picture>
-        <source srcset="./dist/img/menu-ham.avif" type="image/avif" />
-        <source srcset="./dist/img/menu-ham.webp" type="image/webp" />
-        <img
-        class="header__icon header__icon--menu"
-        alt="Hamburger menu icon"
-        src="./dist/img/menu-ham.png"
-        type="image/png"
-        />
-      </picture>
+      <i class='bx bx-menu header__icon header__icon--menu'></i>
       
       <nav class="navigation">
         <header class="flex flex__end navigation__header">
-          <img
-          class="header__icon header__icon--close"
-          alt="Hamburger menu icon"
-          src="./dist/img/close-menu.svg"
-          type="image/svg"
-          />
+          <i class='bx bx-x header__icon header__icon--close'></i>
         </header>
         <ul class="navigation__list flex flex__column">
           <li class="navigation__item">
@@ -73,7 +62,7 @@
       </div>
     </section>
 
-    <section class="products section-space">
+    <main class="products section-space">
       <h2 class="heading-alternate products__title">Our collection</h2>
       <div class="products__container">
         <div class="product flex flex__column">
@@ -137,8 +126,157 @@
           <p class="product__text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
         </div>
       </div>
+    </main>
+
+    <section class="features">
+      <div class="features__container">
+        <h2 class="heading-3 features__title">Why choose us?</h2>
+        <p class="features__text">A large part of our role is choosing which particular coffees will be featured  in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
+
+        <div class="features__grid">
+          <div class="feature">
+            <picture>
+              <source srcset='./dist/img/cafe-icon.avif' type='image/avif' />
+              <source srcset='./dist/img/cafe-icon.webp' type='image/webp' />
+              <img 
+                class="feature__icon"
+                alt='Cafe grain icon' 
+                loading='lazy' 
+                src='./dist/img/cafe-icon.png' 
+                type='image/png' 
+              />
+            </picture>
+            <h3 class="heading-4 feature__title">Best quality</h3>
+            <p class="feature__text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+          </div>
+          <div class="feature">
+            <picture>
+              <source srcset='./dist/img/gif-icon.avif' type='image/avif' />
+              <source srcset='./dist/img/gif-icon.webp' type='image/webp' />
+              <img 
+                class="feature__icon"
+                alt='Cafe grain icon' 
+                loading='lazy' 
+                src='./dist/img/gif-icon.png' 
+                type='image/png' 
+              />
+            </picture>
+            <h3 class="heading-4 feature__title">Exclusive benefits</h3>
+            <p class="feature__text">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+          </div>
+          <div class="feature">
+            <picture>
+              <source srcset='./dist/img/truck-icon.avif' type='image/avif' />
+              <source srcset='./dist/img/truck-icon.webp' type='image/webp' />
+              <img 
+                class="feature__icon"
+                alt='Cafe grain icon' 
+                loading='lazy' 
+                src='./dist/img/truck-icon.png' 
+                type='image/png' 
+              />
+            </picture>
+            <h3 class="heading-4 feature__title">Free shipping</h3>
+            <p class="feature__text">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
+    <section class="directions mt-xl section-space">
+      <div class="directions__container">
+        <h2 class="heading-3 directions__title">How it works</h2>
+        <div class="progress progress__blue">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="directions__grid">
+          <div class="direction">
+            <p class="direction__number heading-alternate">01</p>
+            <h3 class="heading-4 direction__title">Pick your coffee</h3>
+            <p class="direction__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+          </div>
+          <div class="direction">
+            <p class="direction__number heading-alternate">02</p>
+            <h3 class="heading-4 direction__title">Choose the frequency</h3>
+            <p class="direction__text">Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+          </div>
+          <div class="direction">
+            <p class="direction__number heading-alternate">03</p>
+            <h3 class="heading-4 direction__title">Receive and enjoy!</h3>
+            <p class="direction__text">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+          </div>
+        </div>
+        <a href="/create-plan.html" class="directions__button">Create your plan</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__box">
+          <div class="flex flex__center">
+            <picture>
+              <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
+              <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
+              <img
+              class="logo"
+              alt="Coffee grains"
+              src="./dist/img/logo-cafe.png"
+              type="image/png"
+              />
+            </picture>
+            <h3 class="logo__title footer__logo">coffeeroasters</h3>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item text-navigation"><a href="/" class="footer__link">Home</a></li>
+            <li class="footer__item text-navigation"><a href="/about.html" class="footer__link">About</a></li>
+            <li class="footer__item text-navigation"><a href="/create-plan.html" class="footer__link">Create your plan</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/twitter.avif' type='image/avif' />
+              <source srcset='./dist/img/twitter.webp' type='image/webp' />
+              <img 
+                alt='twitter icon' 
+                loading='lazy' 
+                src='./dist/img/twitter.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/facebook.avif' type='image/avif' />
+              <source srcset='./dist/img/facebook.webp' type='image/webp' />
+              <img 
+                alt='Faceboon icon' 
+                loading='lazy' 
+                src='./dist/img/facebook.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/instagram.avif' type='image/avif' />
+              <source srcset='./dist/img/instagram.webp' type='image/webp' />
+              <img 
+                alt='instagram icon' 
+                loading='lazy' 
+                src='./dist/img/instagram.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="./src/assets/js/app.js"></script>
   </body>
 </html>

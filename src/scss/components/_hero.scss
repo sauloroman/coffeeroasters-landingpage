@@ -6,17 +6,38 @@
   background-position: 70%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 1.5rem;
   overflow: hidden;
+  margin-bottom: 10rem;
   position: relative;
   
   &--home {
     height: 50rem;
     background-image: url('/dist/img/hero_home.png');
   }
+
+  &--about {
+    height: 40rem;
+    background-image: url('/dist/img/hero__about.jpg');
+    background-position: 55%;
+
+    .hero__overlay {
+      background-color: rgba(0, 0, 0, .15);
+    }
+  }
+
+  &--create {
+    height: 40rem;
+    background-image: url('/dist/img/hero__create.png');
+    background-position: center;
+
+    .hero__overlay {
+      background-color: rgba(0, 0, 0, .3);
+    }
+  }
   
   &__overlay {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .4);
     height: 100%;
     left: 0;
     position: absolute;
@@ -45,6 +66,7 @@
   }
   
   &__text {
+    width: 95%;
     font-weight: 200;
     color: v.$color-light;
     text-align: center;
