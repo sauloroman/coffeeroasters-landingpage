@@ -2,32 +2,16 @@
 @use '../abstracts/mixins' as m;
 
 .progress {
-
-  width: 80%;
-  display: none;
-  // display: flex;
-
-  &__circle {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    border: 2px solid v.$color-blue;
-    margin-right: 10rem;
-
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 10rem;
-      height: 2px;
-      border: 2px solid v.$color-cream;
-      transform: translateX( calc( 4rem - 2px ) );
-    }
-
-    &:last-of-type {
-      &::after {
-        display: none;
-      }
-    }
+  
+  
+  &__blue {
+    @include m.progress( v.$color-blue, v.$color-cream );
+    display: none;
+  }
+  
+  &__light {
+    @include m.progress( v.$color-cream, v.$color-blue );
+    display: none;
   }
 
 }

@@ -12,6 +12,12 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  width: 120rem;
+  max-width: 95%;
+  margin-inline: auto;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -27,12 +33,6 @@ button {
   background-color: none;
   border: none;
   cursor: pointer;
-}
-
-.container {
-  width: 120rem;
-  max-width: 95%;
-  margin-inline: auto;
 }
 
 html {
@@ -135,13 +135,13 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 .header__icon {
+  font-size: 3rem;
   cursor: pointer;
 }
 .header__icon--menu {
   display: block;
 }
 .header__icon--close {
-  width: 1.8rem;
   display: block;
 }
 
@@ -195,6 +195,14 @@ h1, h2, h3, h4 {
 .hero--about .hero__overlay {
   background-color: rgba(0, 0, 0, 0.15);
 }
+.hero--create {
+  height: 40rem;
+  background-image: url("/dist/img/hero__create.png");
+  background-position: center;
+}
+.hero--create .hero__overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .hero__overlay {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
@@ -242,18 +250,19 @@ h1, h2, h3, h4 {
   background-color: #66D2CF;
 }
 
-.progress {
+.progress__blue {
   width: 80%;
+  display: flex;
   display: none;
 }
-.progress__circle {
+.progress__blue > div {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   border: 2px solid #0E8784;
   margin-right: 10rem;
 }
-.progress__circle::after {
+.progress__blue > div::after {
   content: "";
   display: inline-block;
   width: 10rem;
@@ -261,8 +270,31 @@ h1, h2, h3, h4 {
   border: 2px solid #FDD6BA;
   transform: translateX(calc(4rem - 2px));
 }
-.progress__circle:last-of-type::after {
+.progress__blue > div:last-of-type::after {
+  opacity: 0;
+}
+.progress__light {
+  width: 80%;
+  display: flex;
   display: none;
+}
+.progress__light > div {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #FDD6BA;
+  margin-right: 10rem;
+}
+.progress__light > div::after {
+  content: "";
+  display: inline-block;
+  width: 10rem;
+  height: 2px;
+  border: 2px solid #0E8784;
+  transform: translateX(calc(4rem - 2px));
+}
+.progress__light > div:last-of-type::after {
+  opacity: 0;
 }
 
 .logo {
@@ -270,6 +302,51 @@ h1, h2, h3, h4 {
 }
 .logo__title {
   margin-left: 1rem;
+}
+
+.directions {
+  text-align: center;
+}
+.directions__black {
+  padding: 2rem;
+  background-color: #333D4B;
+  color: #FEFCF7;
+  border-radius: 1rem;
+}
+.directions__black .direction__title {
+  color: #FEFCF7;
+}
+.directions__title {
+  color: #83888F;
+  margin-bottom: 2rem;
+}
+.directions__button {
+  background-color: #0E8784;
+  border-radius: 8px;
+  color: #FEFCF7;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 3.2rem;
+  transition: all 0.4s ease-out;
+  width: 80%;
+  text-align: center;
+  font-family: "Fraunces", serif;
+}
+.directions__button:hover {
+  background-color: #66D2CF;
+}
+
+.direction {
+  margin-bottom: 5rem;
+}
+.direction__title {
+  margin-bottom: 2rem;
+}
+.direction__number {
+  font-family: "Fraunces", serif;
+  font-size: 7.2rem;
+  font-weight: 900;
+  color: #FDD6BA;
 }
 
 .flex {
@@ -449,43 +526,10 @@ h1, h2, h3, h4 {
   margin-inline: auto;
 }
 
-.directions {
-  padding-top: 75rem;
-  text-align: center;
-}
-.directions__title {
-  color: #83888F;
-  margin-bottom: 2rem;
-}
-.directions__button {
-  background-color: #0E8784;
-  border-radius: 8px;
-  color: #FEFCF7;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 1.5rem 3.2rem;
-  transition: all 0.4s ease-out;
-  width: 80%;
-  text-align: center;
-  font-family: "Fraunces", serif;
-}
-.directions__button:hover {
-  background-color: #66D2CF;
-}
-
-.direction {
-  margin-bottom: 5rem;
-}
-.direction__title {
-  margin-bottom: 2rem;
-}
-.direction__number {
-  font-family: "Fraunces", serif;
-  font-size: 7.2rem;
-  font-weight: 900;
-  color: #FDD6BA;
-}
-
 .section-space {
   margin-bottom: 10rem;
+}
+
+.mt-xl {
+  padding-top: 75rem;
 }

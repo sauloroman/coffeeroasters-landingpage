@@ -25,6 +25,16 @@
       background-color: rgba(0, 0, 0, .15);
     }
   }
+
+  &--create {
+    height: 40rem;
+    background-image: url('/dist/img/hero__create.png');
+    background-position: center;
+
+    .hero__overlay {
+      background-color: rgba(0, 0, 0, .3);
+    }
+  }
   
   &__overlay {
     background-color: rgba(0, 0, 0, .4);

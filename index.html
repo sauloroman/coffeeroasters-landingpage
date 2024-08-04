@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoffeeRoasters &mdash; Home</title>
+    <link rel="icon" href="./dist/img/cafe-icon.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="./dist/css/app.css" />
   </head>
@@ -22,25 +25,11 @@
         </picture>
         <h3 class="logo__title">coffeeroasters</h3>
       </div>
-      <picture>
-        <source srcset="./dist/img/menu-ham.avif" type="image/avif" />
-        <source srcset="./dist/img/menu-ham.webp" type="image/webp" />
-        <img
-        class="header__icon header__icon--menu"
-        alt="Hamburger menu icon"
-        src="./dist/img/menu-ham.png"
-        type="image/png"
-        />
-      </picture>
+      <i class='bx bx-menu header__icon header__icon--menu'></i>
       
       <nav class="navigation">
         <header class="flex flex__end navigation__header">
-          <img
-          class="header__icon header__icon--close"
-          alt="Hamburger menu icon"
-          src="./dist/img/close-menu.svg"
-          type="image/svg"
-          />
+          <i class='bx bx-x header__icon header__icon--close'></i>
         </header>
         <ul class="navigation__list flex flex__column">
           <li class="navigation__item">
@@ -194,13 +183,13 @@
       </div>
     </section>
 
-    <section class="directions section-space">
+    <section class="directions mt-xl section-space">
       <div class="directions__container">
         <h2 class="heading-3 directions__title">How it works</h2>
-        <div class="progress">
-          <div class="progress__circle"></div>
-          <div class="progress__circle"></div>
-          <div class="progress__circle"></div>
+        <div class="progress progress__blue">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
         <div class="directions__grid">
           <div class="direction">

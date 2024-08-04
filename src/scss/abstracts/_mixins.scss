@@ -1,5 +1,35 @@
 @use './variables' as v;
 
+@mixin progress( $colorCircle, $colorLine ) {
+  width: 80%;
+  display: flex;
+
+  & > div {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid $colorCircle;
+    margin-right: 10rem;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 10rem;
+      height: 2px;
+      border: 2px solid $colorLine;
+      transform: translateX( calc( 4rem - 2px ) );
+    }
+
+    &:last-of-type {
+      &::after {
+        opacity: 0;
+      }
+    }
+
+  }
+
+}
+
 @mixin button( $bgColor, $bgHover, $color, $width: 100% ) {
   background-color: $bgColor;
   border-radius: 8px;
