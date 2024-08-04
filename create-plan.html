@@ -6,9 +6,9 @@
     <title>CoffeeRoasters &mdash; Create Plan</title>
     <link rel="icon" href="./dist/img/cafe-icon.png">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./dist/css/app.css" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body class="container">
     <header class="header flex flex__between">
@@ -86,18 +86,18 @@
       </div>
     </section>
 
-    <main class="questions">
+    <section class="summary">
+      <div class="summary__container">
+        
+      </div>
+    </section>
+
+    <main class="questions section-space">
       <div class="questions__grid">
         <div class="questions__progress">
           Progress
         </div>
-        <ol class="questions__container">
-          <li class="question">
-            <header class="question__header">
-              <h2 class="heading-4 question__title">How do you drink your coffee?</h2>
-            </header>
-          </li>
-        </ol>
+        <ol class="questions__container"></ol>
       </div>
     </main>
     
@@ -166,6 +166,6 @@
       </div>
     </footer>
 
-    <script src="./src/assets/js/app.js"></script>
+    <script type="module" src="./src/assets/js/app.js"></script>
   </body>
 </html>

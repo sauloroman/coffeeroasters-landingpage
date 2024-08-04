@@ -1,0 +1,80 @@
+@use '../../abstracts/variables' as v;
+@use '../../abstracts/mixins' as m;
+
+.questions {
+
+  &__grid {
+    @include m.grid(1, 1fr, 2.4rem );
+  }
+
+  &__progress {
+    display: none;
+    opacity: 0;
+  }
+
+}
+
+.question {
+
+  margin-bottom: 4rem;
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+  
+  &__title {
+    width: 70%;
+    color: v.$color-gray;
+    line-height: 1.2;
+  }
+
+  &__content {
+    display: none;
+    opacity: 0;
+    transition: all .4s ease-out;
+
+    &--show {
+      display: unset;
+      opacity: 1;
+    }
+  }
+
+
+  &__icon {
+    font-size: 3.6rem;
+    cursor: pointer;
+    color: v.$color-blue;
+    transition: all .4 ease;
+    display: block;
+
+    &:hover {
+      color: v.$color-hover;
+    }
+  }
+
+  &__options {
+    @include m.grid(1, 1fr, 2.4rem );
+  }
+
+  &__option {
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: v.$color-cream-2;
+    transition: all .4s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    &--selected {
+      background-color: v.$color-blue;
+      color: v.$color-light;
+
+      .question__option-title {
+        color: inherit;
+      }
+    }
+  }
+
+}

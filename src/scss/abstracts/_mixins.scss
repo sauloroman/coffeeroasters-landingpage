@@ -2,7 +2,8 @@
 
 @mixin progress( $colorCircle, $colorLine ) {
   width: 80%;
-  display: flex;
+  // display: flex;
+  display: none;
 
   & > div {
     width: 4rem;
