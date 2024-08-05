@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.footer {
+
+  padding: 6rem 2rem;
+  background: v.$color-black;
+  margin-bottom: 1rem;
+
+  &__logo {
+    color: v.$color-light;
+  }
+
+  &__list {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: v.$color-gray;
+    letter-spacing: 3px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 2rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+}

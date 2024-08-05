@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoffeeRoasters &mdash; Create Plan</title>
-</head>
-<body>
-  <h1>Crear Plan</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeRoasters &mdash; Create Plan</title>
+    <link rel="icon" href="./dist/img/cafe-icon.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./dist/css/app.css" />
+
+  </head>
+  <body class="container create-plan">
+    <header class="header flex flex__between">
+      <div class="flex">
+        <picture>
+          <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
+          <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
+          <img
+          class="logo"
+          alt="Coffee grains"
+          src="./dist/img/logo-cafe.png"
+          type="image/png"
+          />
+        </picture>
+        <h3 class="logo__title">coffeeroasters</h3>
+      </div>
+      <i class='bx bx-menu header__icon header__icon--menu'></i>
+      
+      <nav class="navigation">
+        <header class="flex flex__end navigation__header">
+          <i class='bx bx-x header__icon header__icon--close'></i>
+        </header>
+        <ul class="navigation__list flex flex__column">
+          <li class="navigation__item">
+            <a class="navigation__link" href="/">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/about.html">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/create-plan.html"
+            >Create Your Plan</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero hero--create">
+      <div class="hero__overlay"></div>
+      <div class="hero__grid">
+        <div class="hero__content flex flex__column">
+          <h1 class="heading-3 hero__title">Create a plan</h1>
+          <p class="hero__text">
+            Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="directions directions__black bg-black section-space">
+      <div class="directions__container">
+        <div class="progress progress__light">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="directions__grid">
+          <div class="direction">
+            <p class="direction__number heading-alternate">01</p>
+            <h3 class="heading-4 direction__title">Pick your coffee</h3>
+            <p class="direction__text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+          </div>
+          <div class="direction">
+            <p class="direction__number heading-alternate">02</p>
+            <h3 class="heading-4 direction__title">Choose the frequency</h3>
+            <p class="direction__text">Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+          </div>
+          <div class="direction">
+            <p class="direction__number heading-alternate">03</p>
+            <h3 class="heading-4 direction__title">Receive and enjoy!</h3>
+            <p class="direction__text">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="questions section-space">
+      <div class="questions__grid">
+        <div class="questions__progress">
+          Progress
+        </div>
+        <ol class="questions__container"></ol>
+      </div>
+    </main>
+    
+    <section class="summary">
+      <div class="summary__container">
+        <span class="summary__info">Order Summary</span>
+        <p class="summary__text"></p>
+      </div>
+    </section>
+
+    <section class="flex flex__center section-space">
+      <button class="summary__button">Create my plan</button>
+    </section>
+    
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__box">
+          <div class="flex flex__center">
+            <picture>
+              <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
+              <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
+              <img
+              class="logo"
+              alt="Coffee grains"
+              src="./dist/img/logo-cafe.png"
+              type="image/png"
+              />
+            </picture>
+            <h3 class="logo__title footer__logo">coffeeroasters</h3>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item text-navigation"><a href="/" class="footer__link">Home</a></li>
+            <li class="footer__item text-navigation"><a href="/about.html" class="footer__link">About</a></li>
+            <li class="footer__item text-navigation"><a href="/create-plan.html" class="footer__link">Create your plan</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/twitter.avif' type='image/avif' />
+              <source srcset='./dist/img/twitter.webp' type='image/webp' />
+              <img 
+                alt='twitter icon' 
+                loading='lazy' 
+                src='./dist/img/twitter.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/facebook.avif' type='image/avif' />
+              <source srcset='./dist/img/facebook.webp' type='image/webp' />
+              <img 
+                alt='Faceboon icon' 
+                loading='lazy' 
+                src='./dist/img/facebook.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/instagram.avif' type='image/avif' />
+              <source srcset='./dist/img/instagram.webp' type='image/webp' />
+              <img 
+                alt='instagram icon' 
+                loading='lazy' 
+                src='./dist/img/instagram.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal modal--hidden">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <header class="modal__header">
+          <h2 class="heading-4 modal__title">Order Summary</h2>
+        </header>
+        <p class="summary__text modal__summary">
+          &quot; I drink my coffee as <span class="summary__text-span">Filter</span>, with a <span class="summary__text-span">Deaf</span> type of bean. <span class="summary__text-span">250g</span> ground ala <span class="summary__text-span">Cafetiére</span>, sent to me <span class="summary__text-span">Every Week</span>&quot;
+        </p>
+        <p class="modal__info">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+        <div class="flex flex__center">
+          <button class="modal__button">Checkout - $14.00 / mo</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/assets/js/app.js"></script>
+  </body>
 </html>

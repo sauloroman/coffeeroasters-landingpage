@@ -1,11 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoffeeRoasters &mdash; About</title>
-</head>
-<body>
-  <h1>About</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeRoasters &mdash; About us</title>
+    <link rel="icon" href="./dist/img/cafe-icon.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./dist/css/app.css" />
+  </head>
+  <body class="container">
+    <header class="header flex flex__between">
+      <div class="flex">
+        <picture>
+          <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
+          <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
+          <img
+          class="logo"
+          alt="Coffee grains"
+          src="./dist/img/logo-cafe.png"
+          type="image/png"
+          />
+        </picture>
+        <h3 class="logo__title">coffeeroasters</h3>
+      </div>
+      <i class='bx bx-menu header__icon header__icon--menu'></i>
+      
+      <nav class="navigation">
+        <header class="flex flex__end navigation__header">
+          <i class='bx bx-x header__icon header__icon--close'></i>
+        </header>
+        <ul class="navigation__list flex flex__column">
+          <li class="navigation__item">
+            <a class="navigation__link" href="/">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/about.html">About us</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="/create-plan.html"
+            >Create Your Plan</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="hero hero--about">
+      <div class="hero__overlay"></div>
+      <div class="hero__grid">
+        <div class="hero__content flex flex__column">
+          <h1 class="heading-3 hero__title">About us</h1>
+          <p class="hero__text">
+            Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="commitment section-space">
+      <div class="commitment__container">
+        <div class="commitment__imageBox">
+          <picture>
+            <source srcset='./dist/img/commitment.avif' type='image/avif' />
+            <source srcset='./dist/img/commitment.webp' type='image/webp' />
+            <img 
+              class="commitment__image"
+              alt='Commitment image' 
+              loading='lazy' 
+              src='./dist/img/commitment.png' 
+              type='image/png' 
+            />
+          </picture>
+        </div>
+        <div class="commitment__content">
+          <h2 class="heading-3 commitment__title">Our commitment</h2>
+          <p class="commitment__text">We’re built on a mission and a commitment to doing good along the way. We want to make it easy for you to discover and brew the world’s best coffee at home. To locate the specific lots we want to purchase, we travel nearly 60 days a year trying to understand the challenges and opportunities in each of these places.</p>
+          <p class="commitment__text"> We collaborate with exceptional coffee growers and empower a global community of farmers through with well above fair-trade benchmarks. We also offer training, support farm community initiatives, and invest in coffee plant science. Curating only the finest blends, we roast each lot to highlight tasting profiles distinctive to their native growing region.</p>
+        </div>
+      </div>
+    </main>
+
+    <section class="quality section-space">
+      <div class="quality__container">
+        <div class="quality__imageBox">
+          <picture>
+            <source srcset='./dist/img/quality.avif' type='image/avif' />
+            <source srcset='./dist/img/quality.webp' type='image/webp' />
+            <img 
+              class="quality__image"
+              alt='Quality image' 
+              loading='lazy' 
+              src='./dist/img/quality.png' 
+              type='image/png' 
+            />
+          </picture>
+        </div>
+        <div class="quality__content">
+          <h2 class="heading-3 quality__title">Uncompromising quality</h2>
+          <p class="quality__text">Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so that brewing is easy and enjoyable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="headquarters section-space">
+      <div class="headquarters__container">
+        <h2 class="heading-3 headquarters__title">Our headquarters</h2>
+        <div class="headquarters__grid">
+          <div class="headquarter flex flex__column">
+            <picture>
+              <source srcset='./dist/img/continent-1.avif' type='image/avif' />
+              <source srcset='./dist/img/continent-1.webp' type='image/webp' />
+              <img 
+                class="headquarter__image"
+                alt='Continent 1' 
+                loading='lazy' 
+                src='./dist/img/continent-1.png' 
+                type='image/png' 
+              />
+            </picture>
+            <h3 class="heading-4 headquarter__title">United Kingdom</h3>
+            <p class="headquarter__text">
+              68  Asfordby Rd <br />
+              Alcaston <br />
+              SY6 1YA <br />
+              +44 1241 918425 <br />
+            </p>
+          </div>
+          <div class="headquarter flex flex__column">
+            <picture>
+              <source srcset='./dist/img/continent-2.avif' type='image/avif' />
+              <source srcset='./dist/img/continent-2.webp' type='image/webp' />
+              <img 
+                class="headquarter__image"
+                alt='Continent 2' 
+                loading='lazy' 
+                src='./dist/img/continent-2.png' 
+                type='image/png' 
+              />
+            </picture>
+            <h3 class="heading-4 headquarter__title">Canada</h3>
+            <p class="headquarter__text">
+              1528  Eglinton Avenue <br />
+              Toronto <br />
+              Ontario M4P 1A6 <br />
+              +1 416 485 2997 <br />
+            </p>
+          </div>
+          <div class="headquarter flex flex__column">
+            <picture>
+              <source srcset='./dist/img/continent-3.avif' type='image/avif' />
+              <source srcset='./dist/img/continent-3.webp' type='image/webp' />
+              <img 
+                class="headquarter__image"
+                alt='Continent 3' 
+                loading='lazy' 
+                src='./dist/img/continent-3.png' 
+                type='image/png' 
+              />
+            </picture>
+            <h3 class="heading-4 headquarter__title">Australia</h3>
+            <p class="headquarter__text">
+              36 Swanston Street <br />
+              Kewell <br />
+              Victoria <br />
+              +61 4 9928 3629 <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__box">
+          <div class="flex flex__center">
+            <picture>
+              <source srcset="./dist/img/logo-cafe.avif" type="image/avif" />
+              <source srcset="./dist/img/logo-cafe.webp" type="image/webp" />
+              <img
+              class="logo"
+              alt="Coffee grains"
+              src="./dist/img/logo-cafe.png"
+              type="image/png"
+              />
+            </picture>
+            <h3 class="logo__title footer__logo">coffeeroasters</h3>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item text-navigation"><a href="/" class="footer__link">Home</a></li>
+            <li class="footer__item text-navigation"><a href="/about.html" class="footer__link">About</a></li>
+            <li class="footer__item text-navigation"><a href="/create-plan.html" class="footer__link">Create your plan</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/twitter.avif' type='image/avif' />
+              <source srcset='./dist/img/twitter.webp' type='image/webp' />
+              <img 
+                alt='twitter icon' 
+                loading='lazy' 
+                src='./dist/img/twitter.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/facebook.avif' type='image/avif' />
+              <source srcset='./dist/img/facebook.webp' type='image/webp' />
+              <img 
+                alt='Faceboon icon' 
+                loading='lazy' 
+                src='./dist/img/facebook.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+          <div class="footer__icon">
+            <picture>
+              <source srcset='./dist/img/instagram.avif' type='image/avif' />
+              <source srcset='./dist/img/instagram.webp' type='image/webp' />
+              <img 
+                alt='instagram icon' 
+                loading='lazy' 
+                src='./dist/img/instagram.png' 
+                type='image/png' 
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/assets/js/app.js"></script>
+  </body>
 </html>

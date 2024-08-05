@@ -11,9 +11,21 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  width: 120rem;
+  max-width: 95%;
+  margin-inline: auto;
+}
+
 a {
+  cursor: pointer;
   text-decoration: none;
   display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
 }
 
 button {

@@ -1,0 +1,41 @@
+@use '../../abstracts/variables' as v;
+@use '../../abstracts/mixins' as m;
+
+.summary {
+
+  border-radius: 1rem;
+  background-color: v.$color-black;
+  padding: 4rem;
+  margin-bottom: 4rem;
+
+  &__info {
+    display: inline-block;
+    color: v.$color-gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    color: v.$color-light;
+    font-family: v.$font-family-heading;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    font-weight: 700;
+
+    &-span {
+      color: v.$color-blue;
+      font-weight: 900;
+    }
+  }
+
+  &__button {
+    @include m.button( 
+      v.$color-blue, 
+      v.$color-hover, 
+      v.$color-light, 
+      70%
+    )
+  }
+
+}
