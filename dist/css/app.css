@@ -557,6 +557,61 @@ h1, h2, h3, h4 {
   color: inherit;
 }
 
+.modal--hidden {
+  display: none;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 90%;
+  background-color: #FEFCF7;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  padding-bottom: 4rem;
+}
+.modal__header {
+  padding: 2rem 1rem;
+  background-color: #333D4B;
+}
+.modal__title {
+  color: #FEFCF7;
+}
+.modal__summary {
+  padding: 4rem 2rem 1rem 2rem;
+  color: #83888F;
+  line-height: 1.7;
+}
+.modal__info {
+  padding: 0 2rem 3rem 2rem;
+}
+.modal__button {
+  background-color: #0E8784;
+  border-radius: 8px;
+  color: #FEFCF7;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 3.2rem;
+  transition: all 0.4s ease-out;
+  width: 80%;
+  text-align: center;
+  font-family: "Fraunces", serif;
+}
+.modal__button:hover {
+  background-color: #66D2CF;
+}
+
 .features {
   padding: 6rem 2rem;
   background-color: #333D4B;

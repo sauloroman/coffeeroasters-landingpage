@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./dist/css/app.css" />
 
   </head>
-  <body class="container">
+  <body class="container create-plan">
     <header class="header flex flex__between">
       <div class="flex">
         <picture>
@@ -170,6 +170,22 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal--hidden">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <header class="modal__header">
+          <h2 class="heading-4 modal__title">Order Summary</h2>
+        </header>
+        <p class="summary__text modal__summary">
+          &quot; I drink my coffee as <span class="summary__text-span">Filter</span>, with a <span class="summary__text-span">Deaf</span> type of bean. <span class="summary__text-span">250g</span> ground ala <span class="summary__text-span">Cafetiére</span>, sent to me <span class="summary__text-span">Every Week</span>&quot;
+        </p>
+        <p class="modal__info">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+        <div class="flex flex__center">
+          <button class="modal__button">Checkout - $14.00 / mo</button>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="./src/assets/js/app.js"></script>
   </body>

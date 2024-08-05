@@ -5,7 +5,10 @@ const navigation = document.querySelector('.navigation');
 const buttonOpenNav = document.querySelector('.header__icon--menu');
 const buttonCloseNav = document.querySelector('.header__icon--close');
 const questionsContainer = document.querySelector('.questions__container');
-const summaryText = document.querySelector('.summary__text');
+const summaryTextElements = document.querySelectorAll('.summary__text');
+const modal = document.querySelector('.modal');
+const modalButton = document.querySelector('.modal__button');
+const summaryButton = document.querySelector('.summary__button');
 
 // ########################################
 // VARIABLES
@@ -17,6 +20,10 @@ const summaryText = document.querySelector('.summary__text');
 
 const toggleMenu = function() {
   navigation.classList.toggle('navigation--open');
+}
+
+const toggleModal = function() {
+  modal.classList.toggle('modal--hidden');
 }
 
 const createOptions = function( options = [] ) {
@@ -59,9 +66,12 @@ const displayQuestions = async function() {
 
 const displaySummary = function( summary = {} ) {
 
-  summaryText.innerHTML = `
-    &quot; I drink my coffee as <span class="summary__text-span">${summary['question-1']}</span>, with a <span class="summary__text-span">${summary['question-2']}</span> type of bean. <span class="summary__text-span">${summary['question-3']}</span> ground ala <span class="summary__text-span">${summary['question-4']}</span>, sent to me <span class="summary__text-span">${summary['question-5']}</span>&quot;
-  `;
+  summaryTextElements.forEach( function( summaryText ) {
+    summaryText.innerHTML = `
+      &quot; I drink my coffee as <span class="summary__text-span">${summary['question-1']}</span>, with a <span class="summary__text-span">${summary['question-2']}</span> type of bean. <span class="summary__text-span">${summary['question-3']}</span> ground ala <span class="summary__text-span">${summary['question-4']}</span>, sent to me <span class="summary__text-span">${summary['question-5']}</span>&quot;
+    `;
+  })
+
 
 }
 
@@ -75,6 +85,9 @@ const init = async function() {
 
 buttonOpenNav.addEventListener('click', toggleMenu );
 buttonCloseNav.addEventListener('click', toggleMenu );
+
+summaryButton.addEventListener('click', toggleModal );
+modalButton.addEventListener('click', toggleModal );
 
 const handleQuestions = async function() {
 
